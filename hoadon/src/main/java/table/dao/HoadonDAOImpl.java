@@ -104,7 +104,7 @@ public class HoadonDAOImpl implements HoadonDAO {
       stmt = conn1.createStatement();
       stmt.executeUpdate(sql);
       System.out.println(
-        "----------------Cap nhat thong tin thanh cong------------------"
+        "----------------Cap nhat thong tin thanh cong------------------"+ sql
       );
     } catch (SQLException e) {
       e.printStackTrace();
@@ -136,7 +136,7 @@ public class HoadonDAOImpl implements HoadonDAO {
       stmt = conn1.createStatement();
       ResultSet rs = stmt.executeQuery(sql);
       if (rs.next()) {
-        hd.setMahd(rs.getString("mahd"));
+        hd.setMahd(rs.getString("maHD"));
         hd.setKhachhang(rs.getString("khachhang"));
         hd.setNgayghi(rs.getString("ngayghi"));
         hd.setTencongty_kh(rs.getString("tencongty_kh"));
@@ -149,7 +149,7 @@ public class HoadonDAOImpl implements HoadonDAO {
     }
     return null;
   }
-
+  
   @Override
   public List<HoaDon> SearchKhachhang(String keyword) {
     Connection conn1 = connection();

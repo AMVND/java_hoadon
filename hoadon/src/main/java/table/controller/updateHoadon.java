@@ -19,7 +19,7 @@ public class updateHoadon extends HttpServlet {
   protected void doGet(HttpServletRequest req, HttpServletResponse resp)
     throws ServletException, IOException {
     // TODO Auto-generated method stub
-    String mahd = req.getParameter("mahd");
+    String mahd = req.getParameter("maHD");
     HoaDon hd = hoadonDAO.selectKhachhang(mahd);
     RequestDispatcher dispatcher = getServletContext()
       .getRequestDispatcher("/WEB-INF/hoadon-Updateform.jsp");

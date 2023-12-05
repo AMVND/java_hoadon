@@ -134,13 +134,15 @@ input[type="password"],
 <img src="images/logo.png">
 <div id="wrapper">
 	<div id="header">
-	<h2>DANH SÁCH NHÂN VIÊN THƯ VIỆN</h2>
+	<h2>DANH SÁCH KHÁCH HÀNG</h2>
 </div>
 </div>
 
 <input type="submit" value="Thêm khách hàng" class="add-button" onclick="window.location.href='insertHoadon'; return false;"/>
 <form action="searchHoadon" >
-	<input type="text" name="search" placeholder="NHẬP...." class="search"><input type="submit" value="Tìm kiếm" class="search-button">
+	<input type="text" name="search" placeholder="NHẬP...." class="search">
+	<input type="submit" value="Tìm kiếm" class="search-button">
+	<a href="/hoadon/list"  class="button">Trở lại</a>
 </form>
 	<table border="0">
 		<tr>
@@ -151,19 +153,19 @@ input[type="password"],
 			<c:forEach var="tempHoadon" items="${Hoadon}">
 				<!-- Construct an update link -->
 				<c:url var="updateLink" value="updateHoadon">
-					<c:param name="maHD" value="${tempHoadon.maHD}"/>
+					<c:param name="maHD" value="${tempHoadon.mahd}"/>
 				</c:url>
 				<!-- Construct an delete link -->
 				<c:url var="deleteLink" value="deleteHoadon">
-					<c:param name="maHD" value="${tempHoadon.maHD}"/>
+					<c:param name="maHD" value="${tempHoadon.mahd}"/>
 				</c:url>
 				<tr>
-					<td>${tempHoadon.maHD}</td>
-					<td>${tempHoadon.khachHang}</td>
-					<td>${tempHoadon.tenCongTy_KH}</td>
-					<td>${tempHoadon.ngayGhi}</td>
-					<td>${tempHoadon.maSoThue}</td>
-					<td>${tempHoadon.tongTien}</td>					
+					<td>${tempHoadon.mahd}</td>
+					<td>${tempHoadon.khachhang}</td>
+					<td>${tempHoadon.tencongty_kh}</td>
+					<td>${tempHoadon.ngayghi}</td>
+					<td>${tempHoadon.masothue}</td>
+					<td>${tempHoadon.tongtien}</td>					
 					<!-- Display update link -->
 					<td>
 						<a href="${updateLink}" class="button">Cập nhật</a>	

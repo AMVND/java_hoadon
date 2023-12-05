@@ -94,7 +94,7 @@ margin-left: 490px;
       <label for="mahd">Mã hóa đơn: </label>
     </div>
     <div class="col-75">
-      <input type="text" id="mahd" name="mahd" value="${HoaDon.mahd}" readonly>
+      <input type="text" id="mahd" name="mahd" value="${Hoadon.mahd}" readonly>
     </div>
   </div>
   <div class="row">
@@ -102,7 +102,7 @@ margin-left: 490px;
       <label for="khachhang">Tên khách hàng</label>
     </div>
     <div class="col-75">
-      <input type="text" id="khachhang" name="khachhang" value="${HoaDon.khachhang}">
+      <input type="text" id="khachhang" name="khachhang" value="${Hoadon.khachhang}">
     </div>
   </div>
   <div class="row">
@@ -110,7 +110,7 @@ margin-left: 490px;
       <label for="tencongty_kh">Tên công ty: </label>
     </div>
     <div class="col-75">
-      	<input type="text" id="tencongty_kh" name="tencongty_kh" value="${HoaDon.tencongty_kh}">
+      	<input type="text" id="tencongty_kh" name="tencongty_kh" value="${Hoadon.tencongty_kh}">
     </div>
   </div>
   <div class="row">
@@ -118,7 +118,7 @@ margin-left: 490px;
       <label for="ngayghi">Ngày: </label>
     </div>
     <div class="col-75">
-      	<input type="text" id="ngayghi" name="ngayghi" value="${HoaDon.ngayghi}">
+      	<input type="text" id="ngayghi" name="ngayghi" value="${Hoadon.ngayghi}">
     </div>
   </div>
   <div class="row">
@@ -126,7 +126,7 @@ margin-left: 490px;
       <label for="masothue">Mã số thuế: </label>
     </div>
     <div class="col-75">
-	<input type="text" id="masothue" name="masothue" value="${HoaDon.masothue}">
+	<input type="text" id="masothue" name="masothue" value="${Hoadon.masothue}">
     </div>
   </div>
   <div class="row">
@@ -134,7 +134,7 @@ margin-left: 490px;
       	<label for="tongtien">Tổng tiền: </label>
     </div>
     <div class="col-75">
-      	<input type="text" id="tongtien" name="tongtien" value="${HoaDon.tongtien}">
+      	<input type="text" id="tongtien" name="tongtien" value="${Hoadon.tongtien}">
     </div>
   </div>
   <br>
